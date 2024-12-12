@@ -1,0 +1,222 @@
+body {
+  background-color: darkkhaki;
+}
+
+.calendar {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: rgb(237, 155, 205);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header button:hover {
+  background-color: #0056b3;
+}
+
+.filter {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.filter input {
+  padding: 8px;
+  font-size: 14px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+}
+
+.day {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  border: 1px solid #e85252;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.today {
+  background-color: #f00cce;
+}
+
+.selected {
+  background-color: #c7f1ae;
+}
+
+/* Styles for the Event List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  position: relative;
+}
+
+button.edit, button.delete {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+button.edit:hover, button.delete:hover {
+  background-color: #ec971f;
+}
+
+.cell .event-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+}
+
+button.save {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.save:hover {
+  background-color: #218838;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.cell ul {
+  margin-top: 30px;
+}
+
+ul li button {
+  margin-left: 10px;
+}
+
+ul li button.save {
+  margin-left: 10px;
+}
+
+.side-panel {
+  width: 300px;
+  background-color: #a78c8c;
+  padding: 20px;
+  margin-left: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-panel h3 {
+  margin-top: 0;
+}
+
+.side-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-panel li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.side-panel button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+
